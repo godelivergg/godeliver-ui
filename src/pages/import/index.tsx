@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, Col, Container, Form, Row, Table, Toast } from "react-bootstrap";
+import { Button, Col, Container, Form, Row, Table } from "react-bootstrap";
 import { getImports, postImportOrder } from "../../service/dodeliver-api";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
@@ -10,7 +10,6 @@ export default function Import() {
 
     const search = <FontAwesomeIcon icon={faSearch} size="1x" />
     const [data, setData] = useState([]);
-    const [show, setShow] = useState(false);
 
     const [formFilters, setFormFilters] = useState<any>({
         id: '',
